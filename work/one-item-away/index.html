@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>One Item Away! — jeffrin james</title><meta name="description" content="How a cart progress bar turned average order value into a goal shoppers wanted to reach, not a number we pushed them to hit"><meta name="theme-color" content="#0b0b0b"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600;700;800&family=Funnel+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&family=Shrikhand&display=swap" rel="stylesheet"><script>
+    (function () {
+      var t = 'dark';
+      try { t = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+      try { var n = performance.getEntriesByType('navigation')[0]; if (n && n.type === 'reload' && location.pathname === '/') history.scrollRestoration = 'manual'; } catch (e) {}
+    })();
+  </script><link rel="stylesheet" href="/assets/about.DWY8wHQ1.css"></head> <body style="--dot:#3ccf7a"> <a class="skip" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap"> <a class="brand" href="/" aria-label="jeffrin james, home"><span class="brand-name">jeffrin james</span></a> <nav class="nav" aria-label="Main"> <a href="/#work" aria-current="page">work</a> <a href="/about">about</a> <a class="resume-link" href="/Jeffrin_James_Resume_Product_Designer.pdf" download title="download resume">resume
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> </a> <button class="theme-toggle" type="button" aria-label="Switch to light theme" data-theme-toggle> <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg> <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg> </button> </nav> </div> </header> <main id="main">  <article> <header class="cs-head wrap"> <a class="back" href="/#work" data-back><span aria-hidden="true">←</span> back</a> <h1 class="cs-title">One Item Away!</h1> <p class="cs-intro">How a single progress bar turned JioMart’s cart into a goal worth chasing, and a coupon feature into a reward engine for multiple business outcomes</p> <dl class="cs-meta"> <div><dt>App name / Client</dt><dd>JioMart (Reliance Retail)</dd></div><div><dt>My Role</dt><dd>Product Designer (0-1 discovery &amp; dev handoff)</dd></div><div><dt>Industry</dt><dd>Quick Commerce (B2C)</dd></div><div><dt>Platform</dt><dd>JioMart App (iOS &amp; Android)</dd></div> </dl> <figure class="cs-hero"><img src="/work/one-item-away/card.webp" alt="" width="2000" height="1500"></figure> </header> <div class="wrap"> <div class="prose"><h2 id="a-jiomart-shopper-fills-her-basket-with-the-weeks-groceries">A JioMart shopper fills her basket with the week’s groceries.</h2>
+<p>She’s ₹50 short of a discount she’ll never know existed, because nothing on the screen tells her. She checks out, the business loses the larger basket and she loses the saving. Nobody did anything wrong, the interface just stayed silent at a critical time of the user’s journey. This is the story of how we broke that silence, and the calls we had to make to do it without cheapening the brand or breaking the margin model.</p>
+<blockquote>
+<p>Every number here is a pre-launch target, labelled as such. The thinking is the point.</p>
+</blockquote>
+<hr>
+<h2><span class="ch">Chapter 1</span>“You cant nudge someone toward a goal they cant see”</h2>
+<h2 id="the-brief-said-increase-average-order-value">The brief said, “Increase Average Order Value”</h2>
+<p>But the real question was sharper, “W<strong>hat would make someone choose to add one more thing, in the moment, without feeling pushed?”</strong></p>
+<p>In Indian e-grocery, margins are thin and AOV is the most efficient lever there is. A bigger basket spreads fixed picking, packing and delivery costs across more items. JioMart had the inventory breadth across Grocery, Quick Commerce, Electronics, Fashion and Home. What it didn’t have was a reason, mid-session, for any of it to matter to the shopper.</p>
+<p><strong>Three leaks hidden in plain sight:</strong></p>
+<ul>
+<li><strong>Flat baskets:</strong> People bought what they came for and left. Nothing made “one more item” feel worth it.</li>
+<li><strong>Wasted promo spend:</strong> Coupons sat in a generic tray, usually found at checkout and wasn’t changing behaviour.</li>
+<li><strong>Siloed verticals:</strong> A grocery run never hinted that Electronics or Fashion existed in the same trip.</li>
+</ul>
+<p>So I reframed the goal as a feeling, not a metric: <strong>make the next rupee of spend feel like visible, earned progress toward a reward you can see, trust, and claim.</strong> Get that right, and AOV stops being something we extract from people. It becomes something they reach for.</p>
+<p><img src="/work/one-item-away/ch1.webp" alt="Coupon unlock progress bar across JioMart screens"></p>
+<hr>
+<h2><span class="ch">Chapter 2</span>Reading the Indian Shopper</h2>
+<h2 id="it-was-important-because-the-same-mechanic-can-read-as-generous-in-one-market-and-gimmick-in-another-one">It was important because the same mechanic can read as “generous” in one market and “gimmick” in another one.</h2>
+<p>Before opening Figma, I sat with how this audience actually behaves:</p>
+<ul>
+<li><strong>Value-maximisation is a sport here.</strong> Indian shoppers hunt deals and take real pride in extracting maximum value.</li>
+<li><strong>Trust lives in exact rupees.</strong> “Up to 30% off” reads as a catch. “₹50 off” reads as a promise. That single observation shaped one of my biggest trade-offs (next chapter).</li>
+<li><strong>The cart is a household item.</strong> An online basket is often a family run - groceries, a phone accessory, a kitchen item. Tracking each category’s reward independently mirrors how families actually shop, so a cross-category nudge feels natural rather than salesy, if done right.</li>
+</ul>
+<p><strong>The principle I designed around:</strong> In this market, honesty is the conversion mechanic. The interface never says “up to,” never hides the math. It states the precise gap and the precise reward at every step, because transparency is what unlocks the spend.</p>
+<hr>
+<h2><span class="ch">Chapter 3</span>The First Thing I Got Wrong</h2>
+<h2 id="my-first-instinct-felt-obviously-right-show-people-the-whole-prize-wall-every-coupon-they-could-eventually-unlock-in-a-category-laid-out-so-theyd-aim-high-more-goals-more-motivation-right">My first instinct felt obviously right… Show people the whole prize wall. Every coupon they could eventually unlock in a category, laid out, so they’d aim high. More goals, more motivation. Right?</h2>
+<p>Wrong.</p>
+<p>Faced with a spread of distant rewards, people couldn’t tell which one was closest, mis-judged the effort, and <strong>disengaged from the bar entirely</strong>. Choice overload, in one screen. Engineering, separately, flagged the same concept as a heavy, chatty payload that fought the performance budget. Two signals, one conclusion.</p>
+<ul>
+<li>The call? <strong>Kill the prize wall. Show one goal at a time: the nearest unlocked reward per category, revealing the next tier only after the current one is won.</strong></li>
+<li>The trade-off? I gave up the “aspirational ceiling”. Users no longer see the biggest possible reward up front, which in theory could pull bigger baskets.</li>
+<li><strong>Why it held?</strong> The goal-gradient effect is real: motivation climbs as a visible goal gets closer. One reachable target beat ten distant ones in confusion.</li>
+</ul>
+<h2 id="that-pivot-taught-me-the-spine-of-the-whole-feature-clarity-converts-abundance-paralyses">That pivot taught me the spine of the whole feature: <strong>clarity converts, abundance paralyses.</strong></h2>
+<p><img src="/work/one-item-away/ch3.webp" alt="Nearest-goal-only progress bar"></p>
+<hr>
+<h2><span class="ch">Chapter 4</span>The Hard Calls</h2>
+<h2 id="most-of-this-project-lived-in-the-trade-offs">Most of this project lived in the trade-offs.</h2>
+<p>Here’s the decision ledger, the choices that shaped V1, what each one cost, and why I held the line.</p>
+<p><img src="/work/one-item-away/hard-calls.webp" alt="The decision ledger: five calls that shaped V1"></p>
+<p>The thread through all five: <strong>ship the simplest thing that can prove the bet, and protect trust and margin while doing it.</strong> Each “no” was a deliberate sequencing choice, not an omission.</p>
+<h2 id="the-second-course-correction">The second course correction</h2>
+<p>Auto-apply nearly shipped. It was the “obvious” delight by quietly choosing the best coupon, maximise the visible saving. Two things stopped it. <strong>Technically</strong>, an optimiser was brittle against the real-time auto-revert logic. <strong>Experientially</strong>, a discount the user didn’t consciously choose reads as a gimmick in exactly the market that values transparency most.</p>
+<p><img src="/work/one-item-away/auto-apply.webp" alt="Auto-apply versus user-picked coupon"></p>
+<hr>
+<h2><span class="ch">Chapter 5</span>Building It So It Could Grow</h2>
+<h2 id="a-feature-touching-home-plp-pdp-shop-all-and-cart-is-a-systems-problem-before-its-a-visual-one">A feature touching Home, PLP, PDP, Shop All and Cart is a systems problem before it’s a visual one.</h2>
+<p>I brought Engineering in from week one, and we made a decision that paid off far beyond V1: <strong>one floating bar, not five bespoke layouts.</strong></p>
+<p>The unlock itself is a small state machine the same way on every surface:</p>
+<p><img src="/work/one-item-away/states.webp" alt="The unlock states of the progress bar"></p>
+<p>The bar hydrates from a single source of truth, so a coupon unlocked on the listing page reads as unlocked in the cart. Thresholds, rupee values and names all live in a CMS, so the business can change an offer without a code release. We designed templates, not screenshots.</p>
+<p><img src="/work/one-item-away/all-screens.webp" alt="The floating bar across Home, PLP, PDP, Shop All and Cart"></p>
+<hr>
+<h2><span class="ch">Chapter 6</span>How We’d Know It Worked</h2>
+<h2 id="it-was-important-that-the-project-was-not-just-shippable-but-measurable-as-well-since-i-am-not-authorised-to-disclose-the-actual-numbers-heres-the-direction-i-would-take-in-order-to-prove-whether-the-feature-worked">It was important that the project was not just shippable but measurable as well. (Since I am not authorised to disclose the actual numbers, here’s the direction I would take in order to prove whether the feature worked)</h2>
+<p>Some of the key factors we wanted to funnel and observe were as follows:</p>
+<ul>
+<li>Average Order Value (AOV): A bigger basket was the strongest indicator to prove the worth of this feature</li>
+<li>Coupon apply rate: Percentage increase in the number of users who ‘unlocked and used’ the coupons</li>
+<li>Drop-off: Number of users who did not checkout or complete the payment</li>
+</ul>
+<p>Every call was evidence-led: <strong>spot the drop-off, find the cause, fix it, then measure again</strong> so the next decision is data, not opinion (or a hunch!)</p>
+<hr>
+<h2><span class="ch">Chapter 7</span>What It Taught Me</h2>
+<h2 id="my-key-take-aways-from-the-project-and-what-i-learnt">My key take-aways from the project and what I learnt</h2>
+<ul>
+<li><strong>I shipped a system, not a screen:</strong> The bar was never the point. The reusable unlock engine was, which is exactly why the next chapter was possible.</li>
+<li><strong>Constraints sharpened the design:</strong> The half-a-second bar updation and the backend configuration mandate forced the single component, single source-of-truth architecture (the one I’m most proud of!)</li>
+<li><strong>Progressive disclosure:</strong> ‘Nearest-goal-only’ and ‘user-picks-we-bank’ were some major enlightenment in ‘human behaviour and psychology’</li>
+<li><strong>Transparency is the key:</strong> Especially for Indian consumers the exact rupees, visible rules, honest auto-revert were major head-turners</li>
+</ul>
+<hr>
+<h2><span class="ch">Chapter 8</span>The Bigger Idea I Couldn’t Unsee</h2>
+<h2 id="somewhere-in-the-build-a-quieter-realisation-arrived-the-coupon-was-never-special-it-was-just-the-first-thing-wed-plugged-into-the-slot-the-progress-bar-the-threshold-logic-the-celebration-the-bottom-sheet---none-of-it-cares-whether-the-reward-is-a-coupon-swap-the-payload-keep-the-mechanic-and-the-same-feature-unlocks-entirely-new-business-levers">Somewhere in the build, a quieter realisation arrived: the coupon was never special. It was just the first thing we’d plugged into the slot. The progress bar, the threshold logic, the celebration, the bottom sheet - none of it cares whether the reward is a coupon. Swap the payload, keep the mechanic, and the same feature unlocks entirely new business levers.</h2>
+<p>That’s when a coupon feature became, in my head, a <strong>reward engine. Three extensions I scoped on that insight, each solving a different, real problem while reusing the exact same scaffold at near-zero incremental cost.</strong></p>
+<ul>
+<li>Free Delivery Unlock: Swap the coupon reward with ‘Free Delivery’ reward -the same progress bar now pushes the user to add more to waive off the fee</li>
+<li>Free Gift Unlock: A ‘reward’ that hid in a particular category alone (Beauty), now became an upfront nudge on the homepage for users to shop more</li>
+<li>Merging ‘Steal Deal’ feature: It blended AOV uplift with clearance and urgency, while the earned-access framing protects everyday price perception</li>
+</ul>
+<p>To summarise, here’s how the newly discovered extensions helped bring in more value for the business as well as the users:</p>
+<p><img src="/work/one-item-away/bigger-pic.webp" alt="The reward engine and its extensions"></p>
+<hr>
+<h2><span class="ch">Chapter 9</span>The Bottomline</h2>
+<h2 id="one-engine-four-reward-types-four-business-outcomes-and-just-one-component-to-maintain-in-the-library-a-solid-difference-between-shipping-a-feature-and-building-a-platform"><strong>ONE engine. FOUR reward types. FOUR business outcomes. And, JUST ONE component to maintain in the library! A solid difference</strong> between shipping a feature and building a platform.</h2>
+<p>Thank you for scrolling all the way!</p>
+<p>Project progress bar reached 100%. Threshold met.</p>
+<p>Let’s unlock rewards together, cheers! 🎉</p></div> <nav class="pager" aria-label="More projects"> <a class="pager-prev" href="/work/product-rating" style="--dot:#c9a7ff"><span class="label">previous</span><span class="pager-title">← The Product Rating That Was Lying To Everyone</span></a> <a class="pager-next" href="/work/iaspire" style="--dot:#f5b82e"><span class="label">next project</span><span class="pager-title">Behavioural System Design &amp; Gamification of iAspire →</span></a> </nav> <p class="pager-home"><a class="back" href="/#work" data-back><span aria-hidden="true">←</span> back</a></p> </div> </article>  <a class="float-talk" href="#contact" aria-label="get in touch"> <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="ring" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"></path></defs><text><textPath href="#ring" textLength="224" lengthAdjust="spacing">let’s talk ✦ let’s talk ✦</textPath></text></svg> <span class="talk-arrow" aria-hidden="true">↘</span> </a> </main> <p class="toast" role="status" aria-live="polite"></p> <footer class="site-footer" id="contact"> <div class="wrap"> <div class="footer-top"><span class="label">contact</span></div> <p class="talk">let’s talk?</p> <a class="email" href="mailto:jeffrinjames.design@gmail.com">jeffrinjames.design@gmail.com</a> <div class="footer-links"> <a href="/Jeffrin_James_Resume_Product_Designer.pdf" download>download resume</a> <a href="https://www.linkedin.com/in/jeffrinjames" rel="noopener" target="_blank">LinkedIn</a><a href="https://www.instagram.com/jeffrinjames/" rel="noopener" target="_blank">Instagram</a> </div> <div class="footer-base"> <span>© 2026 jeffrin james</span> <a href="#main" class="to-top">back to top ↑</a> </div> </div> </footer> <script type="module" src="/assets/Base.astro_astro_type_script_index_0_lang.DTvl9XS0.js"></script> </body> </html>

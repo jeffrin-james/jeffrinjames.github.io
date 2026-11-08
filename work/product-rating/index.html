@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Product Rating That Was Lying To Everyone — jeffrin james</title><meta name="description" content="How we untangled JioMart's feedback flow so customers stopped punishing products for a delivery they never controlled"><meta name="theme-color" content="#0b0b0b"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600;700;800&family=Funnel+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&family=Shrikhand&display=swap" rel="stylesheet"><script>
+    (function () {
+      var t = 'dark';
+      try { t = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+      try { var n = performance.getEntriesByType('navigation')[0]; if (n && n.type === 'reload' && location.pathname === '/') history.scrollRestoration = 'manual'; } catch (e) {}
+    })();
+  </script><link rel="stylesheet" href="/assets/about.DWY8wHQ1.css"></head> <body style="--dot:#c9a7ff"> <a class="skip" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap"> <a class="brand" href="/" aria-label="jeffrin james, home"><span class="brand-name">jeffrin james</span></a> <nav class="nav" aria-label="Main"> <a href="/#work" aria-current="page">work</a> <a href="/about">about</a> <a class="resume-link" href="/Jeffrin_James_Resume_Product_Designer.pdf" download title="download resume">resume
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> </a> <button class="theme-toggle" type="button" aria-label="Switch to light theme" data-theme-toggle> <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg> <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg> </button> </nav> </div> </header> <main id="main">  <article> <header class="cs-head wrap"> <a class="back" href="/#work" data-back><span aria-hidden="true">←</span> back</a> <h1 class="cs-title">The Product Rating That Was Lying To Everyone</h1> <p class="cs-intro">How I untangled JioMart&#39;s feedback flow so customers stopped punishing products for a delivery they never controlled</p> <dl class="cs-meta"> <div><dt>App name / Client</dt><dd>JioMart (Reliance Retail)</dd></div><div><dt>My Role</dt><dd>Product Designer (Partnering with PMs, Data)</dd></div><div><dt>Industry</dt><dd>Quick Commerce (B2C)</dd></div><div><dt>Platform</dt><dd>JioMart App (iOS &amp; Android)</dd></div> </dl> <figure class="cs-hero"><img src="/work/rating/card.webp" alt="" width="2000" height="1500"></figure> </header> <div class="wrap"> <div class="prose"><h2 id="it-started-with-an-iphone-that-couldnt-be-that-bad">It started with an iPhone that couldn’t be that bad.</h2>
+<p>The Apple iPhone 17 Pro sits at <strong>4.5 stars and up almost everywhere in the world</strong>. On JioMart, it sat at <strong>3.5</strong>. Same phone and same buyers but a full star lower. We figured that the gap wasn’t a product problem. It was a measurement problem, and it was quietly bleeding trust out of the catalog.</p>
+<p>When I pulled the thread, the story underneath was almost unfair to the product itself.</p>
+<p>JioMart runs on quick commerce, and its deliveries are fulfilled through <strong>Reliance Smart Bazaar offline stores,</strong> the same shelves that walk-in shoppers touch, handle, and pick over all day. So an onion could arrive bruised, a delivery could run late in the rain, and none of it was the catalog’s fault. But the app gave frustrated customers only one loud lever to pull: the product’s star rating. And pull it hard, they did.</p>
+<p><img src="/work/rating/iphone-rating.webp" alt="iPhone 17 Pro rating on JioMart compared with elsewhere"></p>
+<hr>
+<h2><span class="ch">Chapter 1</span>The Trap In The Flow</h2>
+<h2 id="the-post-order-screen-stacked-two-surveys-that-looked-like-twins">The post-order screen stacked <strong>two surveys that looked like twins</strong>.</h2>
+<p>“Rate your experience” sat right on top of “Tell us more about the delivery experience.” Two prompts, near-identical shells, no clear line between what am I rating and why. Users couldn’t tell them apart. So they treated them as one thing, and the one number they understood best, the product’s stars, absorbed all the delivery anger.</p>
+<p><img src="/work/rating/twins.webp" alt="Two near-identical rating prompts stacked on the post-order screen"></p>
+<p>Worse, the old “Rate Order” screen collected <strong>delivery rating and product rating on the same page</strong>. A single flow and one emotional context. So a bad delivery and a good banana got judged in the same breath.</p>
+<p><img src="/work/rating/entangled.webp" alt="The old Rate Order screen with delivery and product rating entangled"></p>
+<p>A late, damaged delivery from an offline store was being recorded, permanently, as a bad product. The system was turning operations pain into a catalog scar.</p>
+<hr>
+<h2><span class="ch">Chapter 2</span>A Business Problem Wearing A UX Costume</h2>
+<h2 id="ratings-arent-supposed-to-be-a-decoration-theyre-conversion-infrastructure">Ratings aren’t supposed to be a decoration, they’re <strong>conversion infrastructure</strong>.</h2>
+<p>A flagship phone showing 3.5 where the world says 4.5+ doesn’t just look wrong; it actively talks shoppers out of buying, on exactly the high-consideration, high-margin items where trust matters most. And because delivery was owned by offline store teams, the product org couldn’t fix the cause. They could only stop the symptom from contaminating the catalog.</p>
+<p><strong>That reframing mattered as we weren’t redesigning a survey, we were protecting a trust signal.</strong></p>
+<p><strong>The North Star we kept coming back to: Give every frustration its correct destination. Point delivery anger at delivery, and let products be judged only as products.</strong></p>
+<hr>
+<h2><span class="ch">Chapter 3</span>Where I Looked For The Answer</h2>
+<h2 id="i-benchmarked-across-both-worlds">I benchmarked across both worlds.</h2>
+<ul>
+<li><strong>Quick-commerce apps -</strong> which tend to blur delivery and product feedback the same way we did</li>
+<li><strong>Pure-play e-commerce -</strong> which keeps the two as entirely separate flows</li>
+</ul>
+<p><strong>E-commerce had the right instinct:</strong> separate the streams. But I couldn’t just copy it. I had to <strong>adapt</strong> it for a fulfillment model where the store shelf and the delivery are the same thing. The principle transferred but the execution had to be local.</p>
+<p><strong>The fix was simple: stop asking one question and pretending it’s two.</strong> The core move is a clean <strong>separation of concerns</strong>. Delivery gets its own rating with its own operational vocabulary as reason chips. The moment a customer has a legitimate place to aim their delivery frustration, they stop displacing it onto the product. The bleed stops at the source.</p>
+<p><img src="/work/rating/separate-delivery.webp" alt="Separate delivery rating with reason chips"></p>
+<p>Products also get rated <strong>individually</strong>, on their own terms with positive attribute tags and an optional written review.</p>
+<p><img src="/work/rating/separate-product.webp" alt="Separate product rating with attribute tags"></p>
+<hr>
+<h2><span class="ch">Chapter 4</span>The Decision I Sweated The Most</h2>
+<h2 id="not-every-rating-deserves-the-same-friction-hence-a-conditional-depth-was-layered-in">Not every rating deserves the same friction, hence a conditional depth was layered in.</h2>
+<p>Rate something <strong>4 or 5 stars</strong> - you’re on a fast, frictionless path.</p>
+<p>Rate it <strong>1 to 3 -</strong> the flow asks for reason-tags and a short written review, with an optional photo or video.</p>
+<p>This turned an emotional vent to a diagnostic signal for us to analyse, and make better.</p>
+<p><img src="/work/rating/rating-1-3.webp" alt="The 1 to 3 star path with reason tags and a short review"></p>
+<h2 id="the-trade-off-that-kept-me-up-was-based-on-the-fact-that-friction-cuts-both-ways">The trade-off that kept me up was based on the fact that f<strong>riction cuts both ways</strong>.</h2>
+<p>Force detail on unhappy users and you get richer data. Or, you get abandonment and lose the very signal you were chasing. Demand a written justification for a bruised onion and you’re being tone-deaf to how people actually shop for groceries.</p>
+<h2 id="so-i-didnt-apply-the-rule-like-a-blunt-instrument">So I didn’t apply the rule like a blunt instrument.</h2>
+<p>I <strong>carved out Groceries</strong> from the mandatory-review requirement. The written detail gate applies where the reason carries real weight like electronics, apparel, considered purchases, and gets out of the way for low-stakes staples. That minute exemption made a whole difference. The distinction was between a rule being applied thoughtfully, and one being applied mechanically.</p>
+<h2 id="splitting-the-flows-and-adding-a-validation-branch-is-real-dev-effort-and-i-was-honest-with-engineering-about-cost-from-day-one">Splitting the flows and adding a validation branch is real dev effort, and I was honest with engineering about cost from day one.</h2>
+<p>It was named upfront instead of letting it surface as a surprise. To keep V1 shippable in a few weeks, deliberate cuts were made:</p>
+<ul>
+<li><strong>Reused existing design-system components</strong> (star inputs, chips, bottom sheets) instead of inventing a new rating UI</li>
+<li><strong>Kept photo/video optional</strong>, capturing evidence without blocking submission for groceries</li>
+<li><strong>Scoped validation to fire only below 3 stars</strong>, so engineering builds one branching rule, not a heavy universal gate</li>
+</ul>
+<hr>
+<h2><span class="ch">Chapter 5</span>One Logic, Two Entry Points</h2>
+<h2 id="the-solution-ships-as-two-entry-points-running-in-parallel-in-the-same-launch-because-customers-naturally-arrive-from-different-places">The solution ships as <strong>two entry points running in parallel</strong> in the same launch, because customers naturally arrive from different places.</h2>
+<p>The first flow lives on the <strong>Order Details page</strong>, where someone is already deep in a specific order. So the flow can be deliberate.</p>
+<p>The second flow starts from the <strong>Order Listing page</strong>, where they’re scanning recent orders and the prompts are fast and in-context.</p>
+<p><strong>Different doors, same decision engine underneath. So engineering builds the branching logic once and surfaces it in two places.</strong></p>
+<p>Separating the two ratings wasn’t only a clarity win for sighted users, it fixed the <strong>screen-reader</strong> experience too. Two similar-looking “rate” prompts became two distinct, clearly-labeled controls. Touch targets on stars and chips are sized for comfortable thumb tapping, and the filled amber stars hold up against readable contrast on white. The accessibility fix and the usability fix turned out to be the same fix.</p>
+<p><img src="/work/rating/order-listing.webp" alt="Rating flow from the Order Listing page"></p>
+<p><img src="/work/rating/order-details.webp" alt="Rating flow from the Order Details page"></p>
+<hr>
+<h2><span class="ch">Chapter 6</span>What’s Proven And What Isn’t</h2>
+<h2 id="this-shipped-as-a-concept-validated-by-benchmarking-and-heuristic-reasoning-not-live-ab-testing-the-strongest-evidence-is-diagnostic-not-statistical">This shipped as a concept validated by <strong>benchmarking and heuristic reasoning</strong>, not live A/B testing. The strongest evidence is diagnostic, not statistical:</h2>
+<ul>
+<li>The stacked twin surveys violate a basic recognition principle.</li>
+<li>Two controls that look identical get read as identical.</li>
+<li>The 3.5 vs 4.5 iPhone gap is the clearest proof that the system, not the product, was generating the score.</li>
+<li>The redesign attacks the mechanism producing that gap.</li>
+</ul>
+<h2 id="so-the-outcomes-below-are-directional-and-framed-as-intent-not-as-metrics-im-claiming-happened">So the outcomes below are directional and framed as intent, not as metrics I’m claiming happened:</h2>
+<ul>
+<li><strong>Rating integrity restored</strong> — product scores reflect product quality, not delivery variance.</li>
+<li><strong>Lower cognitive load</strong> — two confusing surveys collapse into one clear, sequenced decision.</li>
+<li><strong>Higher-signal negatives</strong> — low ratings now capture the why, not just the vent.</li>
+</ul>
+<h2 id="heres-what-i-would-do-as-future-scope">Here’s what I would do as future scope:</h2>
+<ul>
+<li><strong>Instrument everything.</strong> Track whether the iPhone gap actually closes and measure 1–3 star review-completion.</li>
+<li><strong>A/B the friction.</strong> Test whether mandatory reviews sharpen signal or suppress submissions — then tune the threshold with data, not intuition.</li>
+<li><strong>Close the loop.</strong> Route delivery reason-tags back to offline-store ops, turning feedback into fulfillment fixes.</li>
+<li><strong>Re-examine the grocery carve-out</strong> once completion data confirms whether I scoped it right.</li>
+</ul>
+<hr>
+<h2><span class="ch">Chapter 7</span>My Learnings</h2>
+<h2 id="the-sharpest-lesson">The sharpest lesson:</h2>
+<p>T<strong>he best design fix can be an operational re-route. More than re-designing the solution was majorly re-structuring.</strong></p>
+<h2 id="second">Second:</h2>
+<p><strong>Friction is at times a necessary tool. Applying a good rule everywhere is often worse than applying it precisely.</strong></p>
+<h2 id="third">Third:</h2>
+<p><strong>Naming the dev cost upfront. This turned the engineering conversation into a collaboration instead of a negotiation.</strong></p>
+<hr>
+<p>Thank you for scrolling all the way. We didn’t let the wrong signal win.</p></div> <nav class="pager" aria-label="More projects"> <a class="pager-prev" href="/work/seller-coupons" style="--dot:#5b8cff"><span class="label">previous</span><span class="pager-title">← Enabling Seller-Funded Coupons in JioMart</span></a> <a class="pager-next" href="/work/one-item-away" style="--dot:#3ccf7a"><span class="label">next project</span><span class="pager-title">One Item Away! →</span></a> </nav> <p class="pager-home"><a class="back" href="/#work" data-back><span aria-hidden="true">←</span> back</a></p> </div> </article>  <a class="float-talk" href="#contact" aria-label="get in touch"> <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="ring" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"></path></defs><text><textPath href="#ring" textLength="224" lengthAdjust="spacing">let’s talk ✦ let’s talk ✦</textPath></text></svg> <span class="talk-arrow" aria-hidden="true">↘</span> </a> </main> <p class="toast" role="status" aria-live="polite"></p> <footer class="site-footer" id="contact"> <div class="wrap"> <div class="footer-top"><span class="label">contact</span></div> <p class="talk">let’s talk?</p> <a class="email" href="mailto:jeffrinjames.design@gmail.com">jeffrinjames.design@gmail.com</a> <div class="footer-links"> <a href="/Jeffrin_James_Resume_Product_Designer.pdf" download>download resume</a> <a href="https://www.linkedin.com/in/jeffrinjames" rel="noopener" target="_blank">LinkedIn</a><a href="https://www.instagram.com/jeffrinjames/" rel="noopener" target="_blank">Instagram</a> </div> <div class="footer-base"> <span>© 2026 jeffrin james</span> <a href="#main" class="to-top">back to top ↑</a> </div> </div> </footer> <script type="module" src="/assets/Base.astro_astro_type_script_index_0_lang.DTvl9XS0.js"></script> </body> </html>
