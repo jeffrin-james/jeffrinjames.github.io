@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Jeffrin_James_Resume_Product_Designer.pdf
+
+Sitemap: https://jeffrinjames.co/sitemap.xml
