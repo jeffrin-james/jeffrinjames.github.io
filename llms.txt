@@ -1,0 +1,15 @@
+# Jeffrin James
+
+> Product designer in Bengaluru, India, currently at JioMart (Reliance Retail), designing commerce and seller products.
+
+## Case studies
+- [The Product Rating That Was Lying To Everyone](https://jeffrinjames.co/work/product-rating/): How we untangled JioMart's feedback flow so customers stopped punishing products for a delivery they never controlled
+- [One Item Away!](https://jeffrinjames.co/work/one-item-away/): How a cart progress bar turned average order value into a goal shoppers wanted to reach, not a number we pushed them to hit
+- [Behavioural System Design & Gamification of iAspire](https://jeffrinjames.co/work/iaspire/): An early-career product design project that shaped my thought about behavioural design and human psychology.
+- [Enabling Seller-Funded Coupons in JioMart](https://jeffrinjames.co/work/seller-coupons/): Led product design of a self-serve coupon system that built seller trust and let sellers start and fund their own campaigns
+
+## About and contact
+- [About](https://jeffrinjames.co/about/): background, experience and education
+- Email: jeffrinjames.design@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/jeffrinjames)
+- [Instagram](https://www.instagram.com/jeffrinjames/)
