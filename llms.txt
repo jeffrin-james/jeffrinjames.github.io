@@ -1,6 +1,6 @@
 # Jeffrin James
 
-> Product designer in Bengaluru, India, currently at JioMart (Reliance Retail), designing commerce and seller products.
+> Product designer in Bengaluru, India, currently at JioMart (Reliance Retail), designing across enterprise, consumer and seller-facing commerce products.
 
 ## Case studies
 - [The Product Rating That Was Lying To Everyone](https://jeffrinjames.co/work/product-rating/): How we untangled JioMart's feedback flow so customers stopped punishing products for a delivery they never controlled
